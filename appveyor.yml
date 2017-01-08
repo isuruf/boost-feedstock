@@ -91,6 +91,6 @@ install:
 build: off
 
 test_script:
-    - "%CMD_IN_ENV% conda build recipe --quiet"
+    - "%CMD_IN_ENV% conda build recipe --quiet --no-build-id"
 deploy_script:
     - cmd: upload_or_check_non_existence .\recipe conda-forge --channel=main
